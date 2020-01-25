@@ -67,8 +67,7 @@ func main() {
 			},
 		},
 	}
-	pngFile, _ := os.Create("output.png")
+	pngFile, _ := os.Create("../output/output.png")
 	chartError := graph.Render(chart.PNG, pngFile)
 	fmt.Println(chartError)
-	fmt.Println(-100.00 + 0.1)
 }
